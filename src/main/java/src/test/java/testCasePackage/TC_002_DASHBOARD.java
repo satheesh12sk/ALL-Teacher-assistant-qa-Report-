@@ -3,8 +3,8 @@ package testCasePackage;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import basePackage.BaseClass;
-import pages.TF_001_LoginPage;
+import src.test.java.basePackage.BaseClass;
+import src.test.java.pages.TF_001_LoginPage;
 
 public class TC_002_DASHBOARD extends BaseClass{
 	
