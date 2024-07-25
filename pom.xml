@@ -11,14 +11,12 @@
 			<artifactId>selenium-java</artifactId>
 			<version>4.13.0</version>
 		</dependency>
-
 		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 			<version>7.4.0</version>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
 		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
 		<dependency>
 			<groupId>org.apache.poi</groupId>
@@ -32,7 +30,6 @@
 			<artifactId>poi</artifactId>
 			<version>5.2.5</version>
 		</dependency>
-
 		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
 		<dependency>
 			<groupId>io.cucumber</groupId>
@@ -51,7 +48,6 @@
 			<artifactId>cucumber-gherkin</artifactId>
 			<version>7.10.0</version>
 		</dependency>
-
 		<dependency>
 			<groupId>com.aventstack</groupId>
 			<artifactId>extentreports</artifactId>
