@@ -99,9 +99,7 @@ public class FlipKartWithOutUsingfilter {
 		waitforSearchBar.until(ExpectedConditions.elementToBeClickable(searchBar)).click();
 
 		// Text field
-		WebElement searchBarInput = driver.findElement(By.className("android.widget.EditText"));
-
-		searchBarInput.sendKeys("iphone 15 plus");
+		driver.findElement(By.className("android.widget.EditText")).sendKeys("iphone 15 plus");
 
 		driver.pressKey(new KeyEvent(AndroidKey.ENTER));
 
@@ -114,11 +112,8 @@ public class FlipKartWithOutUsingfilter {
 		Thread.sleep(3000);
 
 		// Click on first visible product
-
-		WebElement firstProduct = driver
-				.findElement(By.xpath("//android.widget.TextView[@text=\"Apple iPhone 15 Plus (Blue, 128 GB)\"]"));
-
-		firstProduct.click();
+		 
+		driver.findElement(By.xpath("//android.widget.TextView[@text=\"Apple iPhone 15 Plus (Blue, 128 GB)\"]")).click();
 
 		// Click on Cart
 
@@ -126,10 +121,8 @@ public class FlipKartWithOutUsingfilter {
 
 		driver.findElement(By.xpath("//android.widget.TextView[@text=\"Go to cart\"]")).click();
 
-		WebElement placeOrder = driver
-				.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"Place order \"]"));
 
-		placeOrder.click();
+		driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"Place order \"]")).click();
 
 		Thread.sleep(2000);
 		
