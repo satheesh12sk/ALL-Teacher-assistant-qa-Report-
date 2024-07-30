@@ -26,7 +26,7 @@ public class FlipKartWithOutUsingfilter {
 	@Test
 	public void flipKartAutomation() throws MalformedURLException, InterruptedException {
 
-		// Starting the Appium Server=====================================================================
+		// Starting the Appium Server
 
 		AppiumServiceBuilder service = new AppiumServiceBuilder();
 
@@ -57,7 +57,7 @@ public class FlipKartWithOutUsingfilter {
 
 		Thread.sleep(3000);
 
-		// Selecting the language=====================================================================
+		// Selecting the language
 		
 		driver.findElement(By.xpath(
 				"//android.widget.TextView[@resource-id=\"com.flipkart.android:id/tv_subtext\" and @text=\"English\"]"))
@@ -67,7 +67,7 @@ public class FlipKartWithOutUsingfilter {
 
 		Thread.sleep(3000);
 
-		// Log in Phone number=====================================================================
+		// Log in Phone number
 		WebElement phoneNumber = driver
 				.findElement(By.xpath("//android.widget.EditText[@content-desc=\"Phone Number\"]"));
 
@@ -90,7 +90,7 @@ public class FlipKartWithOutUsingfilter {
 
 		Thread.sleep(3000);
 
-		// Click on searchBox to appear the text field=====================================================================
+		// Click on searchBox to appear the text field
 
 		WebDriverWait waitforSearchBar = new WebDriverWait(driver, Duration.ofSeconds(10));
 
@@ -98,8 +98,7 @@ public class FlipKartWithOutUsingfilter {
 
 		waitforSearchBar.until(ExpectedConditions.elementToBeClickable(searchBar)).click();
 
-		// Text field=====================================================================
-
+		// Text field
 		WebElement searchBarInput = driver.findElement(By.className("android.widget.EditText"));
 
 		searchBarInput.sendKeys("iphone 15 plus");
@@ -114,14 +113,14 @@ public class FlipKartWithOutUsingfilter {
 
 		Thread.sleep(3000);
 
-		// Click on first visible product=====================================================================
+		// Click on first visible product
 
 		WebElement firstProduct = driver
 				.findElement(By.xpath("//android.widget.TextView[@text=\"Apple iPhone 15 Plus (Blue, 128 GB)\"]"));
 
 		firstProduct.click();
 
-		// Click on Cart=====================================================================
+		// Click on Cart
 
 		driver.findElement(AppiumBy.androidUIAutomator("new UiSelector().text(\"Add to cart\")")).click();
 
@@ -150,7 +149,7 @@ public class FlipKartWithOutUsingfilter {
 
 		driver.findElement(By.id("com.flipkart.android:id/button")).click();
 
-		// Continue on Shopping=====================================================================
+		// Continue on Shopping
 
 		driver.findElement(By.xpath("//android.widget.TextView[@text=\"Continue \"]")).click();
 
