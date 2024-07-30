@@ -92,9 +92,7 @@ public class FlipKartWithOutLogin {
 
 		gest = new MobileGestures(driver);
 
-		WebElement account = driver.findElement(By.xpath("//android.widget.TextView[@text=\"Account\"]"));
-
-		account.click();
+		driver.findElement(By.xpath("//android.widget.TextView[@text=\"Account\"]")).click();
 
 		Thread.sleep(5000);
 
