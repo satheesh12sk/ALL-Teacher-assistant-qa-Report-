@@ -45,7 +45,7 @@ public class FlipKartWithOutLogin {
 	@BeforeTest
 	public void startService() throws MalformedURLException, URISyntaxException {
 		// Starting the Appium
-		// Server=====================================================================
+		// Server
 
 		service = new AppiumServiceBuilder();
 
@@ -58,7 +58,7 @@ public class FlipKartWithOutLogin {
 		localservices.start();
 
 		// Setting the
-		// capabilities=============================================================================
+		// capabilities
 
 		capabilities = new UiAutomator2Options();
 
@@ -182,7 +182,7 @@ public class FlipKartWithOutLogin {
 		driver.findElement(AppiumBy.accessibilityId("Back Button")).click();
 
 		// Click on Home
-		// icon=====================================================================
+		// icon
 
 		WebElement home = driver
 				.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"Home\"]/android.widget.ImageView"));
@@ -197,7 +197,7 @@ public class FlipKartWithOutLogin {
 		wait.until(ExpectedConditions.elementToBeClickable(searchBar)).click();
 
 		// Text
-		// field=====================================================================
+		// field
 
 		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		WebElement searchBarInput = driver.findElement(By.className("android.widget.EditText"));
@@ -231,14 +231,14 @@ public class FlipKartWithOutLogin {
 		Thread.sleep(5000);
 
 		// Click on first visible
-		// product=====================================================================
+		// product
 
 		List<WebElement> productlist = driver.findElements(By.className("android.view.ViewGroup"));
 
 		productlist.get(1).click();
 
 		// Click on
-		// Cart=====================================================================
+		// Cart
 		
 		Thread.sleep(3000);
 
@@ -251,7 +251,7 @@ public class FlipKartWithOutLogin {
 		gest.clickOnCoordinates(535, 1350);
 
 		// Continue on
-		// Shopping=====================================================================
+		// Shopping
 
 		Thread.sleep(3000);
 		
