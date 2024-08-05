@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+ <class name="testCasePackageTellPortal.TC_001_NewUser_TellPortal"/>
+       <class name="testCasePackageTellPortal.TC_002_Login_TellPortal"/>
+      <class name="testCasePackageTellPortal.TC_003_ForgotPassWord_TellPortal"/>
+       <class name="testCasePackageTellPortal.TC_004_Logout_TellPortal"/>
+       <class name="testCasePackageTellPortal.TC_005_ScenarioMoving_TellPortal"/>
+        <class name="testCasePackageTellPortal.TC_006_ListenAudioPlayCheck_TellPortal"/>
+      <class name="testCasePackageTellPortal.TC_007_RecordingScenarioByUser_TellPortal"/>
+      <class name="testCasePackageTellPortal.TC_008_VoiceTest_TellPortal"/>
+      <class name="testCasePackageTellPortal.TC_009_ScenarioTests_TellPortal"/>
+      <class name="testCasePackageTellPortal.TC_010_PracticeTest_TellPortal"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
