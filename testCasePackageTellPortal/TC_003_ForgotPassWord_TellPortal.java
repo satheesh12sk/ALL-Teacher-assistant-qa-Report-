@@ -39,15 +39,12 @@ public class TC_003_ForgotPassWord_TellPortal extends ProjectSpecifications {
 		driver.navigate().to(
 				"https://dev.tell.navadhiti.com/reset-password/668b7a7fa8ff7781048fbc57/77f0991ee7fed11e1a61c7769dca8f96da516db8214eea98f6b956a5519f77df");
 
-		
-		WebElement newPasswordtextfield = driver.findElement(By.name("newPassWord"));
-		
 		// Enter the new password
+		WebElement newPasswordtextfield = driver.findElement(By.name("newPassWord"));
 		newPasswordtextfield.sendKeys(newpassword);
-
+		
+                // Entering the confirm password
 		WebElement confirmPasswordtextfield = driver.findElement(By.name("confirmPassWord"));
-
-		// Entering the confirm password
 		confirmPasswordtextfield.sendKeys(confirmpassword);
 
 		//Click on submit
