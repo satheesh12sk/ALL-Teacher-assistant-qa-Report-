@@ -22,15 +22,12 @@ public class TC_004_Logout_TellPortal extends ProjectSpecifications {
 
 	@Test(dataProvider = "loginData")
 	public void validateLogOut(String usernamevalues, String passwordvalues) throws InterruptedException {
-
+                // Entering the username
 		WebElement email = driver.findElement(By.xpath("//input[@name='emailOrPhoneNumber']"));
-
-		// Entering the username
 		email.sendKeys(usernamevalues);
-
+		
+                // Entering the password
 		WebElement password = driver.findElement(By.xpath("//input[@name='password']"));
-
-		// Entering the password
 		password.sendKeys(passwordvalues);
 
 		// Click login Button
